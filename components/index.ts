@@ -9,12 +9,13 @@ import CarCard from './CarCard';
 import ShowMore from './ShowMore';
 
 export {
-    Hero,
-    CustomButton,
-    Navbar,
-    Footer,
-    SearchBar,
-    CustomFilter,
-    SearchManufacturer,
-    CarCard
-}
+  Hero,
+  CustomButton,
+  Navbar,
+  Footer,
+  SearchBar,
+  CustomFilter,
+  SearchManufacturer,
+  CarCard, 
+  ShowMore
+};
