@@ -217,3 +217,160 @@
   @apply cursor-default select-none py-2 pl-10 pr-4;
 }
 /* END: search manufacturer styles */
+
+/*LOGIN*/
+.bg-main {
+  @apply flex flex-col items-center justify-center min-h-screen py-2 bg-gray-100;
+}
+
+.main-container {
+  @apply flex flex-col items-center justify-center w-full flex-1 px-4 md:px-8 lg:px-16 xl:px-32 text-center;
+}
+
+.card-container {
+  @apply bg-white rounded-2xl shadow-2xl flex flex-col md:flex-row w-full max-w-4xl;
+}
+
+.card-left {
+  @apply md:w-3/5 p-5;
+}
+
+.card-left-inner {
+  @apply py-10;
+}
+
+.title {
+  @apply text-3xl font-bold text-blue-500 mb-2;
+}
+
+.border-title {
+  @apply border-2 w-10 border-blue-500 inline-block mb-2;
+}
+
+.icon-container {
+  @apply flex justify-center my-2;
+}
+
+.icon {
+  @apply border-2 border-blue-500 rounded-full text-blue-500 p-3 mx-1 transition duration-300 ease-in-out transform hover:scale-110;
+}
+
+.subtitle {
+  @apply text-gray-400 my-3;
+}
+
+.form-container {
+  @apply flex flex-col items-center;
+}
+
+.input-container {
+  @apply bg-gray-100 w-64 p-2 flex items-center mb-3;
+}
+
+.input {
+  @apply bg-gray-100 outline-none text-sm flex-1 text-black;
+}
+
+.input-error {
+  @apply border-red-500;
+}
+
+.error-message {
+  @apply text-red-500 my-3;
+}
+
+.link-container {
+  @apply flex justify-between w-64 mb-5;
+}
+
+.button {
+  @apply border-blue-500 text-blue-500 border-2 rounded-full px-12 py-2 inline-block font-semibold hover:bg-blue-500 hover:text-white;
+}
+
+.card-right {
+  @apply md:w-2/5 bg-blue-500 text-white rounded-tr-2xl rounded-bl-2xl py-12 px-6 md:py-24 md:px-12;
+}
+
+.card-right-title {
+  @apply text-3xl font-bold mb-2;
+}
+
+.card-right-border {
+  @apply border-2 w-10 border-white inline-block mb-2;
+}
+
+.card-right-subtitle {
+  @apply mb-10;
+}
+
+.button_signup{
+ @apply border-white border-2 rounded-full px-12 py-2 inline-block font-semibold hover:bg-white hover:text-blue-500
+}
+
+/*SIGNUP*/
+.signup_main_container{
+  @apply flex flex-col items-center justify-center min-h-screen py-2 bg-gray-100
+}
+.signup_card_container{
+ @apply flex flex-col items-center justify-center w-full flex-1 px-4 md:px-8 lg:px-16 xl:px-32 text-center
+}
+.signup_card_left{
+ @apply bg-white rounded-2xl shadow-2xl flex flex-col md:flex-row w-full max-w-4xl
+}
+.signup_card{
+ @apply md:w-3/5 p-5
+}
+.signup_card_title{
+  @apply py-10
+}
+.signup_h2{
+  @apply text-3xl font-bold text-blue-500 mb-2
+}
+.signup_div{
+  @apply border-2 w-10 border-blue-500 inline-block mb-2
+}
+.signup_social-buttons{
+  @apply flex justify-center my-2
+}
+.signup_social_button{
+ @apply border-2 border-blue-500 rounded-full text-blue-500 p-3 mx-1 transition duration-300 ease-in-out transform hover:scale-110
+}
+.signup_social_icon{
+  @apply text-sm
+}
+.signup_text{
+  @apply text-gray-400 my-3
+}
+.signup_input_container{
+  @apply flex flex-col items-center
+}
+.signup_input_group{
+  @apply bg-gray-100 w-64 p-2 flex items-center mb-3 
+}
+
+.signup_input_field{
+  @apply bg-gray-100 outline-none text-sm flex-1 text-black
+}
+
+.signup_submit_button{
+  @apply border-blue-500 text-blue-500 border-2 rounded-full px-12 py-2 inline-block font-semibold hover:bg-blue-500 hover:text-white
+}
+
+.signup_card_right{
+  @apply md:w-2/5 bg-blue-500 text-white rounded-tr-2xl rounded-bl-2xl py-12 px-6 md:py-24 md:px-12 flex flex-col items-center justify-center
+}
+
+.signup_card_divider{
+ @apply border-2 w-10 border-white inline-block mb-2
+}
+.card_title{
+  @apply text-3xl font-bold mb-2
+}
+
+.card_text{
+ @apply mb-10
+}
+
+.login_button{
+  @apply border-white border-2 rounded-full px-12 py-2 inline-block font-semibold hover:bg-white hover:text-blue-500
+}

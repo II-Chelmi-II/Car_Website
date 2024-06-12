@@ -3,7 +3,11 @@ import Image from "next/image";
 
 import CustomButton from "./CustomButton";
 
+
 const Navbar = () => {
+   
+  
+
   return (
     <header className="w-full absolute z-10">
         <nav className="max-w-[1440px] mx-auto 
@@ -24,6 +28,7 @@ const Navbar = () => {
                 btnType="button"
                 containerStyles="text-primary-blue
                 rounded-full bg-white min-w-[130px]"
+                
             />
         </nav>
     </header>
