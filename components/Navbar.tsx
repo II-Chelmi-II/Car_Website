@@ -2,11 +2,14 @@ import Link from "next/link";
 import Image from "next/image";
 
 import CustomButton from "./CustomButton";
-
+import { useReducer } from "react";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
-   
-  
+    const router = useRouter();
+    const handleLoginSignupClick = () => {
+      router.push("/login");
+    };
 
   return (
     <header className="w-full absolute z-10">
@@ -28,7 +31,7 @@ const Navbar = () => {
                 btnType="button"
                 containerStyles="text-primary-blue
                 rounded-full bg-white min-w-[130px]"
-                
+                onClick={handleLoginSignupClick}
             />
         </nav>
     </header>
