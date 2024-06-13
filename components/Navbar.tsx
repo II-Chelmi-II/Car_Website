@@ -12,6 +12,11 @@ const Navbar = () => {
         router.push("/login");
     };
 
+    const handleAppointmentClick = () => {
+        router.push("/client/appointment");
+    };
+
+
     return (
         <header className="w-full absolute z-10">
             <nav className="max-w-[1440px] mx-auto 
@@ -27,13 +32,21 @@ const Navbar = () => {
                     />
                 </Link>
 
-                <CustomButton 
-                    title="Sign in"
-                    btnType="button"
-                    containerStyles="text-primary-blue
-                    rounded-full bg-white min-w-[130px]"
-                    handleClick={handleSignInClick}
-                />
+                <div className="flex space-x-4">
+                    <CustomButton 
+                        title="Sign in"
+                        btnType="button"
+                        containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]"
+                        handleClick={handleSignInClick}
+                    />
+                    <CustomButton 
+                        title="Appointment"
+                        btnType="button"
+                        containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]"
+                        handleClick={handleAppointmentClick}
+                    />
+                   
+                </div>
             </nav>
         </header>
     )
