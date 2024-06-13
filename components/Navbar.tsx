@@ -1,9 +1,10 @@
+"use client"
 import Link from "next/link";
 import Image from "next/image";
 
 import CustomButton from "./CustomButton";
 import { useReducer } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
     const router = useRouter();
@@ -31,7 +32,7 @@ const Navbar = () => {
                 btnType="button"
                 containerStyles="text-primary-blue
                 rounded-full bg-white min-w-[130px]"
-                onClick={handleLoginSignupClick}
+                onClick={router.push("/login")}
             />
         </nav>
     </header>

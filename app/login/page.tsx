@@ -3,7 +3,7 @@ import React, { useState } from 'react';;
 import { useForm } from 'react-hook-form';
 import apiUser from '@/api/users/user';
 import token from '@/utils/Token';
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 import {
   FaFacebookF,
@@ -19,9 +19,6 @@ interface LoginFormInputs {
 }
 export default function Login() {
  const router = useRouter();
-  const handleSignupClick = () => {
-    router.push('/signup');
-  };
 
  
   const { register, handleSubmit, formState: { errors } } = useForm<LoginFormInputs>();
@@ -107,13 +104,6 @@ export default function Login() {
             <h2 className="card-right-title">Hello, Friend</h2>
             <div className="card-right-border"></div>
             <p className="card-right-subtitle">Welcome to CarHub</p>
-            <button
-              type='button'
-            
-              className="button_signup"
-            onClick={handleSignupClick}>
-              Sign Up
-            </button>
           </div>
         </div>
       </main>
