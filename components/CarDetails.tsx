@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 import Image from "next/image";
-
 import { Dialog, DialogPanel, Transition, TransitionChild } from "@headlessui/react";
 import { CarProps } from "@/types";
 import { generateCarImageUrl } from "@/utils";

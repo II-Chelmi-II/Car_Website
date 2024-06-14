@@ -59,6 +59,7 @@ const SearchBar = () => {
   };
 
   return (
+    
     <form className='searchbar' onSubmit={handleSearch}>
       <div className='searchbar__item'>
         <SearchManufacturer
@@ -87,6 +88,8 @@ const SearchBar = () => {
       </div>
       <SearchButton otherClasses='max-sm:hidden' />
     </form>
+    
+    
   );
 };
 

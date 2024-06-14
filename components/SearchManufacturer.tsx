@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Fragment, useState } from "react";
 import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions, Transition } from "@headlessui/react";
-
+import ContactForm from "./Form";
 import { manufacturers } from "@/constants";
 import { SearchManuFacturerProps } from "@/types";
 

@@ -7,6 +7,8 @@ import CustomFilter from './CustomFilter';
 import SearchManufacturer from './SearchManufacturer';
 import CarCard from './CarCard';
 import ShowMore from './ShowMore';
+import sendEmail from './sendEmail';
+import ContactForm from './Form';
 
 export {
   Hero,
@@ -17,5 +19,8 @@ export {
   CustomFilter,
   SearchManufacturer,
   CarCard, 
-  ShowMore
+  ShowMore,
+  sendEmail,
+  ContactForm
+
 };

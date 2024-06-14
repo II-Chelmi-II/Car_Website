@@ -1,10 +1,11 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-
+import { Footer } from "@/components";
 import { ShowMoreProps } from "@/types";
 import { updateSearchParams } from "@/utils";
 import { CustomButton } from "@/components";
+import ContactForm from "./Form";
 
 const ShowMore = ({ pageNumber, isNext }: ShowMoreProps) => {
   const router = useRouter();
@@ -20,16 +21,21 @@ const ShowMore = ({ pageNumber, isNext }: ShowMoreProps) => {
   };
 
   return (
+    <>
     <div className="w-full flex-center gap-5 mt-10">
       {!isNext && (
         <CustomButton
           btnType="button"
-          title="Show More"
+          title="Show More and Contact"
           containerStyles="bg-primary-blue rounded-full text-white"
           handleClick={handleNavigation}
         />
       )}
     </div>
+    <ContactForm />
+    <Footer />
+  </>
+   
   );
 };
 
