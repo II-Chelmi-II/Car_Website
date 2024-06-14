@@ -1,4 +1,4 @@
-import AppointmentForm from "@/app/appointment/Appointment"
+import AppointmentForm from "@/app/component/appointment/Appointment"
 export default function appointment() {
     return <section>
                  <AppointmentForm />

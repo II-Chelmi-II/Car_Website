@@ -31,7 +31,7 @@ const AppointmentForm: React.FC = () => {
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
     console.log('Form Data:', data);
-    alert('Appointment created successfully!🙂');
+    alert('Appointment created successfully');
     window.location.href = 'http://localhost:3000/client';
   };
 
